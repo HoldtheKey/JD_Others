@@ -5,7 +5,7 @@ name:   合集-京东赚赚&点点券&签到领现金&排行榜&进店领豆&东
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 16 * * *'
+    - cron: '2 0 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/nbzongzong/jd_scripts1207.git ~/scripts
+          git clone https://github.com/DoveBoy/sakura.git ~/scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
