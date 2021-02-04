@@ -4,7 +4,7 @@ name:  合集-天天加速&财富岛
 on:
   workflow_dispatch:
   schedule:
-    - cron: '33 */3 * * *'
+    - cron: '8 0-23/3 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/nbzongzong/jd_scripts1207.git ~/scripts
+          git clone https://github.com/DoveBoy/sakura.git ~/scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
