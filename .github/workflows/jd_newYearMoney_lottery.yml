@@ -3,7 +3,6 @@
 
 name: jd_newYearMoney_lottery 京东压岁钱抢百元卡(2021-2-11)
 
-
 on:
   workflow_dispatch:
   schedule:
@@ -40,9 +39,6 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          
-
-          
           #微信酱
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           #BARK推送
